@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Josh Gribble — Contact</title>
+  <meta name="description" content="Add Josh Gribble to your contacts and find quick links to connect.">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    :root{
+      --bms-yellow: #FFC72C;
+      --bms-black: #191919;
+      --bms-white: #FFFFFF;
+    }
+
+    /* Body */
+    body {
+      margin: 0;
+      font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f7f7;
+      color: var(--bms-black);
+    }
+
+    /* Header */
+    header {
+      background: #FFFFFF;   /* or change to var(--bms-yellow) for yellow header */
+      color: var(--bms-black);
+      height: 60px;
+      padding: 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    header img {
+      height: 100%;
+      max-height: 40px;
+      width: auto;
+    }
+
+    header .brand {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: var(--bms-white);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.06);
+    }
+
+    .name {
+      font-size: 1.8rem;
+      margin: 0 0 6px;
+    }
+
+    .subtitle {
+      margin: 0 0 16px;
+      color: #444;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--bms-black);
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: #efefef;
+      transition: background .2s;
+    }
+
+    .links a:hover { background: #e0e0e0; }
+
+    .actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    @media(min-width:520px) {
+      .actions { grid-template-columns: repeat(2,1fr); }
+    }
+
+    a.btn {
+      text-decoration: none;
+      text-align: center;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 2px solid var(--bms-black);
+      font-weight: 600;
+      transition: all .2s;
+      background: var(--bms-white);
+      color: var(--bms-black);
+    }
+
+    a.btn.primary {
+      background: var(--bms-yellow);
+      border-color: #d4a520;
+    }
+
+    a.btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+      padding: 32px 12px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="bmsvision-logo.png" alt="BMSvision logo" />
+  <div class="brand"></div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1 class="name">Josh Gribble</h1>
+    <p class="subtitle">Sales Manager — BMSvision</p>
+
+    <div class="links">
+      <a href="tel:+15555555555">📞 Call</a>
+      <a href="mailto:josh.gribble@bmsvision.com">✉️ Email</a>
+      <a href="https://www.linkedin.com/in/josh-gribble-725136254/" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+     width="20" height="20" viewBox="0 0 24 24" 
+     fill="#0077B5" aria-label="LinkedIn">
+  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
+           2.24 5 5 5h14c2.76 0 5-2.24 
+           5-5v-14c0-2.76-2.24-5-5-5zm-11.75 
+           20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 
+           1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 
+           1.76zm13.25 12.27h-3v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 
+           0-2.15 1.46-2.15 2.97v5.69h-3v-11h2.88v1.51h.04c.4-.76 
+           1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.75v6.3z"/>
+</svg> LinkedIn
+      </a>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href="josh-gribble.vcf" download>➕ Add to Contacts (VCF)</a>
+      <a class="btn" href="https://bmsvision.com/" target="_blank" rel="noopener">Learn about BMSvision</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p></p>
+</footer>
+</body>
+</html>

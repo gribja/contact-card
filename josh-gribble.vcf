@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Gribble;Josh;;;
+FN:Josh Gribble
+ORG:BMSvision
+TITLE:Sales Director
+TEL;TYPE=WORK,VOICE:+1-555-555-5555
+EMAIL;TYPE=INTERNET:josh@example.com
+URL:https://yourusername.github.io
+ADR;TYPE=WORK:;;123 Main St;City;State;12345;USA
+NOTE:MES, manufacturing systems, textiles & plastics
+END:VCARD
